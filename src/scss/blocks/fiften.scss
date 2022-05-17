@@ -1,12 +1,10 @@
-body,
-html {
-    font: 16px/1.4 Georgia, serif
+.page {
+    font: 16px/1.4 Roboto, sans-serif;
 }
 
 @media only screen and (max-width:500px) {
 
-    body,
-    html {
+    .page {
         font-size: 14px
     }
 }
@@ -21,7 +19,7 @@ html {
 
     .button {
         padding: .5em 1.5em;
-        font: 1.2rem/1.4 Georgia, serif;
+        font: 1.2rem/1.4 Roboto, sans-serif;
         border: none;
         color: #fff;
         background-color: #EB4747;
@@ -34,13 +32,15 @@ html {
         background-color: #ffffff;
         color: #EB4747;
     }
+
+    span {
+        display: inline-block;
+        font: 2rem/1.2 Roboto, sans-serif;
+        margin-bottom: 1em
+    }
 }
 
-span {
-    display: inline-block;
-    font: 2rem/1.2 Georgia, serif;
-    margin-bottom: 1em
-}
+
 
 .gameShuffle {
     pointer-events: none;

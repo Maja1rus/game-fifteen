@@ -61,9 +61,8 @@ html {
   --font-roboto: "Roboto", sans-serif;
 }
 
-body,
-html {
-  font: 16px/1.4 Georgia, serif;
+.page {
+  font: 16px/1.4 Roboto, sans-serif;
 }
 
 .page {
@@ -79,7 +78,7 @@ html {
 
 .page .button {
   padding: 0.5em 1.5em;
-  font: 1.2rem/1.4 Georgia, serif;
+  font: 1.2rem/1.4 Roboto, sans-serif;
   border: none;
   color: #fff;
   background-color: #EB4747;
@@ -95,9 +94,9 @@ html {
   color: #EB4747;
 }
 
-span {
+.page span {
   display: inline-block;
-  font: 2rem/1.2 Georgia, serif;
+  font: 2rem/1.2 Roboto, sans-serif;
   margin-bottom: 1em;
 }
 
@@ -169,8 +168,7 @@ span {
 }
 
 @media only screen and (max-width: 500px) {
-  body,
-  html {
+  .page {
     font-size: 14px;
   }
 }
