@@ -1,0 +1,176 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-roboto);
+}
+
+body,
+html {
+  font: 16px/1.4 var(--font-roboto), sans-serif;
+}
+
+.container {
+  max-width: 1218px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/roboto-regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/roboto-medium.woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/roboto-bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --font-roboto: "Roboto", sans-serif;
+}
+
+body,
+html {
+  font: 16px/1.4 Georgia, serif;
+}
+
+.page {
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.page .button {
+  padding: 0.5em 1.5em;
+  font: 1.2rem/1.4 Georgia, serif;
+  border: none;
+  color: #fff;
+  background-color: #EB4747;
+  border: 2px solid #EB4747;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.page .button:hover {
+  background-color: #ffffff;
+  color: #EB4747;
+}
+
+span {
+  display: inline-block;
+  font: 2rem/1.2 Georgia, serif;
+  margin-bottom: 1em;
+}
+
+.gameShuffle {
+  pointer-events: none;
+  opacity: 0.8;
+  cursor: default;
+}
+
+.gameShuffle .item {
+  -webkit-transition: -webkit-transform 70ms;
+  transition: -webkit-transform 70ms;
+  -o-transition: transform 70ms;
+  transition: transform 70ms;
+  transition: transform 70ms, -webkit-transform 70ms;
+}
+
+.fifteen {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #F2F2F2;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.fifteen .item {
+  outline: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 25%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #EB4747;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-box-shadow: inset 1px 1px #F2F2F2;
+          box-shadow: inset 1px 1px #F2F2F2;
+  -webkit-transition: -webkit-transform 0.2s, -webkit-filter 0.5s;
+  transition: -webkit-transform 0.2s, -webkit-filter 0.5s;
+  -o-transition: transform 0.2s, filter 0.5s;
+  transition: transform 0.2s, filter 0.5s;
+  transition: transform 0.2s, filter 0.5s, -webkit-transform 0.2s, -webkit-filter 0.5s;
+}
+
+.fifteen .itemVal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 84%;
+  height: 84%;
+  margin: 8%;
+  -webkit-box-shadow: inset 0 0 0 2px #fff;
+          box-shadow: inset 0 0 0 2px #fff;
+}
+
+.fifteenWon .item {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
+@media only screen and (max-width: 500px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
